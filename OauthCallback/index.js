@@ -7,8 +7,8 @@ const defaultOptions = Object.freeze({
 });
 
 const defaultQueryOptions = Object.freeze({
-  client_id: process.env.GithubOathClientId,
-  client_secret: process.env.GithubOathClientSecret,
+  client_id: process.env.GithubOauthClientId,
+  client_secret: process.env.GithubOauthClientSecret,
 });
 
 module.exports = function (context, req) {
@@ -17,6 +17,9 @@ module.exports = function (context, req) {
   const qs = { ...defaultQueryOptions, code, state };
   const opts = { ...defaultOptions, qs };
   context.log('calling github', opts)
+
+
+  // TODO: support multiple targetOrigins
 
   request(opts)
     .then(res => {
