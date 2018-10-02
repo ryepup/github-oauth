@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_EXTENSION_VERSION": "~2",
+    "WEBSITE_NODE_DEFAULT_VERSION": "10.6.0",
+    "GithubOauthClientId": "YOUR OAUTH CLIENT ID FROM GITHUB",
+    "GithubOauthClientSecret": "YOUR OAUTH CLIENT SECRET FROM GITHUB",
+    "GithubOauthScope": "YOUR ACCESS REQUIREMENTS",
+    "targetOrigin": "https:\\THE-ORIGIN-FOR-YOUR-FRONTEND"
+  }
+}
